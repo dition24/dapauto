@@ -1,5 +1,8 @@
 const form = document.getElementById('form');
 const result = document.getElementById('result');
+
+require("dotenv").config();
+const ACCESS_KEY = process.env.ACCESS_KEY;
             
 form.addEventListener('submit', function(e) {
     const formData = new FormData(form);
